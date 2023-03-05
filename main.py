@@ -1,7 +1,7 @@
 from flask import Flask, Response, jsonify
 import os
 import json
-# import mimetypes
+import mimetypes
 # from itertools import combinations
 # from itertools import combinations
 # import numpy as np
