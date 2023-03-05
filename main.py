@@ -23,16 +23,16 @@ CORS(app, resources={"*": {"origins": "*"}})
 # app = Flask(__name__)
 
 
+# @app.route('/')
+# def index():
+#     return "Hello, World!"
+
+
+# if __name__ == '__main__':
+#     app.run(debug=True, port=os.getenv("PORT", default=5000))
+
+
 @app.route('/')
-def index():
-    return "Hello, World!"
-
-
-if __name__ == '__main__':
-    app.run(debug=True, port=os.getenv("PORT", default=5000))
-
-
-@app.route('/matrix/<fatores>/<replicadas>',methods=['GET'])
 def matrix(fatores,replicadas):
     alfa = 0.05
     mult = 2
