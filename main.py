@@ -23,13 +23,12 @@ CORS(app, resources={"*": {"origins": "*"}})
 # app = Flask(__name__)
 
 
-# @app.route('/')
-# def index():
-#     return "Hello, World!"
+@app.route('/')
+def index():
+    return "Hello, World!"
 
 
-# if __name__ == '__main__':
-#     app.run(debug=True, port=os.getenv("PORT", default=5000))
+
 # fatores = 9
 # replicadas = 8
 
@@ -1073,7 +1072,10 @@ def testT2k(fatores,replicadas, maty):
     return tab_signbeta.to_json(orient="table"),200,{'Content-Type' : 'application/json'}
 
 
+if __name__ == '__main__':
+    app.run(debug=True, port=os.getenv("PORT", default=5000))
 
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+
+# if __name__ == "__main__":
+#     port = int(os.environ.get("PORT", 5000))
+#     app.run(host='0.0.0.0', port=port)
