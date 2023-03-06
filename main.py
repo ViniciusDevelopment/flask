@@ -30,8 +30,8 @@ CORS(app, resources={"*": {"origins": "*"}})
 
 # if __name__ == '__main__':
 #     app.run(debug=True, port=os.getenv("PORT", default=5000))
-int fatores = 9
-int replicadas = 8
+fatores = 9
+replicadas = 8
 
 @app.route('/')
 def matrix(fatores,replicadas):
