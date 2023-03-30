@@ -25,7 +25,7 @@ CORS(app, resources={"*": {"origins": "*"}})
 
 @app.route('/')
 def index():
-    return "Hello, World!"
+    return ""
 
 
 
